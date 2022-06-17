@@ -1,26 +1,35 @@
-import React, {useState} from "react";
-import "./Dictionary.css"
+import React, { useState } from "react";
+import axios from "axios";
+import "./Dictionary.css";
 
-export default function Dictionary(){
-    let [keyword, SetKeyword] = useState("");
-    function search(event){
-        event.preventDefault();
-        alert (`Searching for ${keyword}`);
-    }
+export default function Dictionary() {
+  let [keyword, SetKeyword] = useState("");
 
-    function handleKeywordChange(event){
-        SetKeyword(event.target.value);
+  function handleResponse(response) {
+    console.log(response.data[0]);
+  }
 
-    }
-        return (
-          <div className="Dictionary">
-            <form onSubmit={search}>
-              <input className="form-control form-control-sm"
-                type= "search"
-                onChange={handleKeywordChange}
-                placeholder="Which word would you want to learn today?"
-               />
-            </form>
-          </div>
-        ); 
+  function search(event) {
+    event.preventDefault();
+    let apiURL = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    axios.get(apiURL).then(handleResponse);
+
+    alert(`Searching for ${keyword}`);
+  }
+
+  function handleKeywordChange(event) {
+    SetKeyword(event.target.value);
+  }
+  return (
+    <div className="Dictionary">
+      <form onSubmit={search}>
+        <input
+          className="form-control form-control-sm"
+          type="search"
+          onChange={handleKeywordChange}
+          placeholder="Which word would you want to learn today?"
+        />
+      </form>
+    </div>
+  );
 }

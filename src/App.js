@@ -9,7 +9,7 @@ function App() {
           Dictionary
       </h1>
       <p>
-        Definitions from Oxford Language
+        Definitions from <a href='https://dictionaryapi.dev/'>Free Dictionary API</a>
       </p>
       <main>
       <Dictionary/>
