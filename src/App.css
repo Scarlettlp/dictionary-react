@@ -1,17 +1,31 @@
+h1 {
+  margin-top: 80px;
+  font-size: 40px;
+  font-weight: bold;
+  
+}
+p {
+  margin-top: 15px;
+  font-size: 11px;
+}
+
 .App {
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
 }
-.App-footer{
-  font-size: small;
+
+.App-footer {
+  color: #9aa0a5;
+  font-size: 12px;
   margin-top: 70px;
 }
-
-h1 {
-  margin-top: 80px;
-  font-size: 30px;
-}
-p{
-margin-top: 15px;
+.suggestion {
   font-size: 11px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #a9acad;
+}
+
+.Definitions {
+  color: #9aa0a5;
 }
