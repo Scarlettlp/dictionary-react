@@ -2,15 +2,14 @@ h1 {
   margin-top: 80px;
   font-size: 40px;
   font-weight: bold;
-  color: #FFFF;
+  color: #ffff;
   margin-left: 30px;
-
 }
 
 p {
   margin-top: 15px;
   font-size: 11px;
-  color: #FFFF;
+  color: #ffff;
 }
 
 body {
@@ -22,11 +21,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   max-width: 960px;
   margin: 0 auto;
-  color: #FFFF;
+  color: #ffff;
 }
 
 .App-footer {
-  color: #FFFF;
+  color: #ffff;
   font-size: 12px;
   margin-top: 3 0px;
   margin-left: 30px;
