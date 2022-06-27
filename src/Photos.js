@@ -14,7 +14,7 @@ export default function Photos(props) {
                     src={photo.src.tiny}
                     alt="visual-description"
                     className="img-fluid"
-                  />    
+                  />
                 </a>
               </div>
             );

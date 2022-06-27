@@ -2,27 +2,34 @@ h1 {
   margin-top: 80px;
   font-size: 40px;
   font-weight: bold;
-  
+  color: #FFFF;
+  margin-left: 30px;
+
 }
+
 p {
   margin-top: 15px;
   font-size: 11px;
+  color: #FFFF;
 }
 
-
+body {
+  background-color: black;
+}
 
 .App {
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   max-width: 960px;
   margin: 0 auto;
-  
+  color: #FFFF;
 }
 
 .App-footer {
-  color: #9aa0a5;
+  color: #FFFF;
   font-size: 12px;
-  margin-top: 70px;
+  margin-top: 3 0px;
+  margin-left: 30px;
 }
 .suggestion {
   font-size: 11px;
@@ -33,4 +40,5 @@ p {
 
 .Definitions {
   color: #9aa0a5;
+  margin-left: 30px;
 }
